@@ -7,7 +7,3 @@ bases:
 patchesStrategicMerge:
   - patch-replica.yaml
 
-images:
-  - name: bazajee/testapp:tpmyapp
-    newName: bazajee/testapp:tpmyapp
-    newTag: v1beta
