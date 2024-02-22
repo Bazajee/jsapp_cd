@@ -1,0 +1,13 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+  - ../base 
+
+patchesStrategicMerge:
+  - patch-replica.yaml
+
+images:
+  - name: bazajee/testapp:tpmyapp
+    newName: bazajee/testapp:tpmyapp
+    newTag: v1beta
